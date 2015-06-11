@@ -1,0 +1,39 @@
+---
+title: "WineQuality"
+output: html_document
+---
+
+Setting the Packages
+----------------------
+```{r}
+install.packages('neuralnet')
+
+#Activate
+library(neuralnet)
+```
+
+Reading in the Data
+------------------------
+```{r}
+data = read.csv('winequality-white.csv')
+
+#View the structure of the dataframe
+str(data)
+summary(data)
+
+plot(data$quality)
+```
+From the scatter plot we see that Data Quality, which we are wanting to predict, is quite thin at the ends.
+We are then wanting to bin Quality into 3 bins, 1, 2, 3
+
+Binning Quality
+-----------------------
+```{r}
+attach(data)
+data$quality_bin[quality < 4] <- 1
+data$quality_bin[quality > 3 & quality < 7] <- 2
+data$quality_bin[quality > 6] <- 3
+View(data)
+plot(data$quality_bin)
+
+```
