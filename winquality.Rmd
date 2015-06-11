@@ -21,6 +21,7 @@ data = read.csv('winequality-white.csv')
 str(data)
 summary(data)
 
+#Scatter plot of the Quality variable
 plot(data$quality)
 ```
 From the scatter plot we see that Data Quality, which we are wanting to predict, is quite thin at the ends.
@@ -30,10 +31,27 @@ Binning Quality
 -----------------------
 ```{r}
 attach(data)
-data$quality_bin[quality < 4] <- 1
-data$quality_bin[quality > 3 & quality < 7] <- 2
+data$quality_bin[quality < 5] <- 1
+data$quality_bin[quality > 4 & quality < 7] <- 2
 data$quality_bin[quality > 6] <- 3
 View(data)
 plot(data$quality_bin)
+```
 
+For Plot's sake
+-----------------------
+To read up on the full documentation on ggplot2 - http://docs.ggplot2.org/current/
+```{r}
+library('ggplot2')
+#factor the quality_bin. This factor is useful for later modeling and also plotting with qplot
+data$quality_bin <- factor(x = data$quality_bin, labels=c("1","2","3"))
+
+qplot(data$quality_bin, data$fixed.acidity, data=data, geom = c("boxplot", "jitter"), 
+      fill=data$quality_bin, main="Quality by Fixed Acidity", xlab="Quality", ylab="Fixed Acidity")
+
+qplot(data$quality_bin, data$volatile.acidity, data=data, geom = c("boxplot", "jitter"), 
+      fill=data$quality_bin, main="Quality by Fixed Acidity", xlab="Quality", ylab="Fixed Acidity")
+
+qplot(data$quality_bin, data$citric.acid, data=data, geom = c("boxplot", "jitter"), 
+      fill=data$quality_bin, main="Quality by Fixed Acidity", xlab="Quality", ylab="Fixed Acidity")
 ```
