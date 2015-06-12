@@ -58,9 +58,9 @@ Building the model
 ---------------------------
 Finally we get to build the model! 
 Our model is used to solve a Classification problem. We are going to use a NN first.
-1) We will use a 80/20 Train/Test to build and test the model
-2) Analyzing the result using crosstab
-3) We'll be using the RSNNS package to build the model
+-1 We will use a 80/20 Train/Test to build and test the model
+-2 Analyzing the result using crosstab
+-3 We'll be using the nnet package to build the model
 ```{r}
 attach(data)
 Var = c("fixed.acidity", "volatile.acidity","citric.acid","residual.sugar","chlorides","free.sulfur.dioxide","total.sulfur.dioxide","density", "pH", "sulphates","alcohol")
@@ -80,9 +80,16 @@ tail(trainIndex)
 
 train <- data_scaled[trainIndex, ]
 test <- data_scaled[-trainIndex, ]
-m <- model.matrix(~Var, data = data_scaled)
-head(m)
-#fit <- neuralnet(quality_bin ~ fixed.acidity+volatile.acidity+citric.acid+residual.sugar+chlorides+free.sulfur.dioxide+total.sulfur.dioxide+density+pH+sulphates+alcohol, train, hidden = 10, threshold = 0.01, lifesign = 'full')
+
+library(nnet)
+fit <- nnet(train$quality_bin ~.,data = train, size = 10)
 
 
+wine_pred <- predict(fit, test, type = 'class')
+
+confmat <- table(test$quality_bin, wine_pred)
+accuracy = (confmat[1] + confmat[5] + confmat[9]) / sum(confmat)
+
+confmat
+sprintf("Accuracy is %f", accuracy) 
 ```
