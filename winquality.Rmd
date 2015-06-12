@@ -6,10 +6,9 @@ output: html_document
 Setting the Packages
 ----------------------
 ```{r}
-install.packages('neuralnet')
-
-#Activate
-library(neuralnet)
+#library('RSNNS')
+library('neuralnet')
+library('ggplot2')
 ```
 
 Reading in the Data
@@ -42,7 +41,6 @@ For Plot's sake
 -----------------------
 To read up on the full documentation on ggplot2 - http://docs.ggplot2.org/current/
 ```{r}
-library('ggplot2')
 #factor the quality_bin. This factor is useful for later modeling and also plotting with qplot
 data$quality_bin <- factor(x = data$quality_bin, labels=c("1","2","3"))
 
@@ -50,8 +48,41 @@ qplot(data$quality_bin, data$fixed.acidity, data=data, geom = c("boxplot", "jitt
       fill=data$quality_bin, main="Quality by Fixed Acidity", xlab="Quality", ylab="Fixed Acidity")
 
 qplot(data$quality_bin, data$volatile.acidity, data=data, geom = c("boxplot", "jitter"), 
-      fill=data$quality_bin, main="Quality by Fixed Acidity", xlab="Quality", ylab="Fixed Acidity")
+      fill=data$quality_bin, main="Quality by Volatile Acidity", xlab="Quality", ylab="Fixed Acidity")
 
 qplot(data$quality_bin, data$citric.acid, data=data, geom = c("boxplot", "jitter"), 
-      fill=data$quality_bin, main="Quality by Fixed Acidity", xlab="Quality", ylab="Fixed Acidity")
+      fill=data$quality_bin, main="Quality by Citric Acidity", xlab="Quality", ylab="Fixed Acidity")
+```
+
+Building the model
+---------------------------
+Finally we get to build the model! 
+Our model is used to solve a Classification problem. We are going to use a NN first.
+1) We will use a 80/20 Train/Test to build and test the model
+2) Analyzing the result using crosstab
+3) We'll be using the RSNNS package to build the model
+```{r}
+attach(data)
+Var = c("fixed.acidity", "volatile.acidity","citric.acid","residual.sugar","chlorides","free.sulfur.dioxide","total.sulfur.dioxide","density", "pH", "sulphates","alcohol")
+
+# Scale the data
+data_scaled <- cbind(scale(data[Var]),data["quality_bin"])
+View(data_scaled)
+
+#Split train and test
+library(caret)
+set.seed(3456)
+trainIndex <- createDataPartition(data$quality_bin, p = .8,
+                                  list = FALSE,
+                                  times = 1)
+head(trainIndex)
+tail(trainIndex)
+
+train <- data_scaled[trainIndex, ]
+test <- data_scaled[-trainIndex, ]
+m <- model.matrix(~Var, data = data_scaled)
+head(m)
+#fit <- neuralnet(quality_bin ~ fixed.acidity+volatile.acidity+citric.acid+residual.sugar+chlorides+free.sulfur.dioxide+total.sulfur.dioxide+density+pH+sulphates+alcohol, train, hidden = 10, threshold = 0.01, lifesign = 'full')
+
+
 ```

@@ -1,0 +1,1683 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0308.1149                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='winequality-white' inline='true' name='textscan.42166.603854444400' version='8.3'>
+      <connection class='textscan' directory='/Users/MaxAir/Analytics/Teach' filename='winequality-white.csv'>
+        <relation name='winequality-white#csv' table='[winequality-white#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+            <column datatype='real' name='fixed acidity' ordinal='0' />
+            <column datatype='real' name='volatile acidity' ordinal='1' />
+            <column datatype='real' name='citric acid' ordinal='2' />
+            <column datatype='real' name='residual sugar' ordinal='3' />
+            <column datatype='real' name='chlorides' ordinal='4' />
+            <column datatype='real' name='free sulfur dioxide' ordinal='5' />
+            <column datatype='real' name='total sulfur dioxide' ordinal='6' />
+            <column datatype='real' name='density' ordinal='7' />
+            <column datatype='real' name='pH' ordinal='8' />
+            <column datatype='real' name='sulphates' ordinal='9' />
+            <column datatype='real' name='alcohol' ordinal='10' />
+            <column datatype='integer' name='quality' ordinal='11' />
+          </columns>
+        </relation>
+        <refresh incremental-updates=''>
+        </refresh>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>fixed acidity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fixed acidity]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>fixed acidity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volatile acidity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[volatile acidity]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>volatile acidity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>citric acid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[citric acid]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>citric acid</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>residual sugar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[residual sugar]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>residual sugar</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chlorides</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[chlorides]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>chlorides</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free sulfur dioxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[free sulfur dioxide]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>free sulfur dioxide</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total sulfur dioxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total sulfur dioxide]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>total sulfur dioxide</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[density]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>density</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pH]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>pH</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sulphates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sulphates]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>sulphates</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alcohol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alcohol]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>alcohol</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quality]</local-name>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias>quality</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[winequality-white#csv]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_SG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[quality]'>
+          <bin value='3'>
+            <value>3</value>
+            <value>4</value>
+          </bin>
+          <bin value='5'>
+            <value>5</value>
+            <value>6</value>
+          </bin>
+          <bin value='7'>
+            <value>7</value>
+            <value>8</value>
+            <value>9</value>
+          </bin>
+        </calculation>
+        <aliases>
+          <alias key='3' value='1' />
+          <alias key='5' value='2' />
+          <alias key='7' value='3' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Chlorides (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[chlorides]' peg='0' size='0.05' />
+      </column>
+      <column datatype='integer' name='[Citric Acid (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[citric acid]' peg='0' size='0.2' />
+      </column>
+      <column datatype='integer' name='[Fixed Acidity (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[fixed acidity]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Free Sulfur Dioxide (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[free sulfur dioxide]' peg='0' size='20' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Residual Sugar (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[residual sugar]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Volatile Acidity (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[volatile acidity]' peg='0' size='0.1' />
+      </column>
+      <column caption='Alcohol' datatype='real' name='[alcohol]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Chlorides' datatype='real' name='[chlorides]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Citric Acid' datatype='real' name='[citric acid]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Density' datatype='real' name='[density]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Fixed Acidity' datatype='real' name='[fixed acidity]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Free Sulfur Dioxide' datatype='real' name='[free sulfur dioxide]' role='measure' type='quantitative'>
+      </column>
+      <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Residual Sugar' datatype='real' name='[residual sugar]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Sulphates' datatype='real' name='[sulphates]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Total Sulfur Dioxide' datatype='real' name='[total sulfur dioxide]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Volatile Acidity' datatype='real' name='[volatile acidity]' role='measure' type='quantitative'>
+      </column>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/MaxAir/Analytics/Teach/winequality-white.tde' schema='Extract' tablename='Extract' update-time='06/11/2015 06:29:50 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='4898' timestamp-start='2015-06-11 06:29:50.678' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alcohol</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[alcohol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alcohol</remote-alias>
+              <ordinal>1</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>8.0</statistic>
+                <statistic aggregation='Max' datatype='real'>14.199999999999999</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chlorides</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[chlorides]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>chlorides</remote-alias>
+              <ordinal>2</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0089999999999999993</statistic>
+                <statistic aggregation='Max' datatype='real'>0.34599999999999997</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>citric acid</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[citric acid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>citric acid</remote-alias>
+              <ordinal>3</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1.6600000000000001</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>density</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[density]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>density</remote-alias>
+              <ordinal>4</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>890</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.98711000000000004</statistic>
+                <statistic aggregation='Max' datatype='real'>1.03898</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>11</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fixed acidity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fixed acidity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fixed acidity</remote-alias>
+              <ordinal>5</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>3.7999999999999998</statistic>
+                <statistic aggregation='Max' datatype='real'>14.199999999999999</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>free sulfur dioxide</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[free sulfur dioxide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>free sulfur dioxide</remote-alias>
+              <ordinal>6</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>132</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>2.0</statistic>
+                <statistic aggregation='Max' datatype='real'>289.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pH</remote-alias>
+              <ordinal>7</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>2.7199999999999998</statistic>
+                <statistic aggregation='Max' datatype='real'>3.8199999999999998</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quality</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[quality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quality</remote-alias>
+              <ordinal>8</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>3</statistic>
+                <statistic aggregation='Max' datatype='integer'>9</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>residual sugar</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[residual sugar]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>residual sugar</remote-alias>
+              <ordinal>9</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>310</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.59999999999999998</statistic>
+                <statistic aggregation='Max' datatype='real'>65.799999999999997</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>10</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sulphates</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sulphates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sulphates</remote-alias>
+              <ordinal>10</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.22</statistic>
+                <statistic aggregation='Max' datatype='real'>1.0800000000000001</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total sulfur dioxide</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[total sulfur dioxide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total sulfur dioxide</remote-alias>
+              <ordinal>11</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>251</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>9.0</statistic>
+                <statistic aggregation='Max' datatype='real'>440.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>9</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volatile acidity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[volatile acidity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volatile acidity</remote-alias>
+              <ordinal>12</ordinal>
+              <family>winequality-white#csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.080000000000000002</statistic>
+                <statistic aggregation='Max' datatype='real'>1.1000000000000001</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Chlorides'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-white' name='textscan.42166.603854444400' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42166.603854444400'>
+            <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[quality]'>
+                <bin value='3'>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin value='5'>
+                  <value>5</value>
+                  <value>6</value>
+                </bin>
+                <bin value='7'>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                </bin>
+              </calculation>
+              <aliases>
+                <alias key='3' value='1' />
+                <alias key='5' value='2' />
+                <alias key='7' value='3' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Chlorides (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[chlorides]' peg='0' size='0.05' />
+            </column>
+            <column caption='Chlorides' datatype='real' name='[chlorides]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[chlorides]' derivation='Count' name='[cnt:chlorides:qk]' pivot='key' type='quantitative' />
+            <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[textscan.42166.603854444400].[Chlorides (bin)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.42166.603854444400].[cnt:chlorides:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' formula='average' id='refline0' label-type='automatic' scope='per-cell' symmetric='false' value-column='[textscan.42166.603854444400].[cnt:chlorides:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42166.603854444400].[cnt:chlorides:qk]</rows>
+        <cols>[textscan.42166.603854444400].[1]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Citirc Acid'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-white' name='textscan.42166.603854444400' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42166.603854444400'>
+            <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[quality]'>
+                <bin value='3'>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin value='5'>
+                  <value>5</value>
+                  <value>6</value>
+                </bin>
+                <bin value='7'>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                </bin>
+              </calculation>
+              <aliases>
+                <alias key='3' value='1' />
+                <alias key='5' value='2' />
+                <alias key='7' value='3' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Citric Acid (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[citric acid]' peg='0' size='0.2' />
+            </column>
+            <column caption='Citric Acid' datatype='real' name='[citric acid]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[citric acid]' derivation='Count' name='[cnt:citric acid:qk]' pivot='key' type='quantitative' />
+            <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[textscan.42166.603854444400].[Citric Acid (bin)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.42166.603854444400].[cnt:citric acid:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' formula='average' id='refline0' label-type='automatic' scope='per-cell' symmetric='false' value-column='[textscan.42166.603854444400].[cnt:citric acid:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42166.603854444400].[cnt:citric acid:qk]</rows>
+        <cols>[textscan.42166.603854444400].[1]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Fixed Acidity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-white' name='textscan.42166.603854444400' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42166.603854444400'>
+            <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[quality]'>
+                <bin value='3'>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin value='5'>
+                  <value>5</value>
+                  <value>6</value>
+                </bin>
+                <bin value='7'>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                </bin>
+              </calculation>
+              <aliases>
+                <alias key='3' value='1' />
+                <alias key='5' value='2' />
+                <alias key='7' value='3' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Fixed Acidity (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[fixed acidity]' peg='0' size='1' />
+            </column>
+            <column-instance column='[fixed acidity]' derivation='Count' name='[cnt:fixed acidity:qk]' pivot='key' type='quantitative' />
+            <column caption='Fixed Acidity' datatype='real' name='[fixed acidity]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[textscan.42166.603854444400].[Fixed Acidity (bin)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.42166.603854444400].[cnt:fixed acidity:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' formula='average' id='refline0' label-type='automatic' scope='per-cell' symmetric='false' value-column='[textscan.42166.603854444400].[cnt:fixed acidity:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42166.603854444400].[cnt:fixed acidity:qk]</rows>
+        <cols>[textscan.42166.603854444400].[1]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Free Sulfur Dioxide'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-white' name='textscan.42166.603854444400' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42166.603854444400'>
+            <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[quality]'>
+                <bin value='3'>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin value='5'>
+                  <value>5</value>
+                  <value>6</value>
+                </bin>
+                <bin value='7'>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                </bin>
+              </calculation>
+              <aliases>
+                <alias key='3' value='1' />
+                <alias key='5' value='2' />
+                <alias key='7' value='3' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Free Sulfur Dioxide (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[free sulfur dioxide]' peg='0' size='20' />
+            </column>
+            <column-instance column='[free sulfur dioxide]' derivation='Count' name='[cnt:free sulfur dioxide:qk]' pivot='key' type='quantitative' />
+            <column caption='Free Sulfur Dioxide' datatype='real' name='[free sulfur dioxide]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[textscan.42166.603854444400].[Free Sulfur Dioxide (bin)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.42166.603854444400].[cnt:free sulfur dioxide:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' formula='average' id='refline0' label-type='automatic' scope='per-cell' symmetric='false' value-column='[textscan.42166.603854444400].[cnt:free sulfur dioxide:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42166.603854444400].[cnt:free sulfur dioxide:qk]</rows>
+        <cols>[textscan.42166.603854444400].[1]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Residual Sugar'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-white' name='textscan.42166.603854444400' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42166.603854444400'>
+            <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[quality]'>
+                <bin value='3'>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin value='5'>
+                  <value>5</value>
+                  <value>6</value>
+                </bin>
+                <bin value='7'>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                </bin>
+              </calculation>
+              <aliases>
+                <alias key='3' value='1' />
+                <alias key='5' value='2' />
+                <alias key='7' value='3' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Residual Sugar (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[residual sugar]' peg='0' size='5' />
+            </column>
+            <column-instance column='[residual sugar]' derivation='Count' name='[cnt:residual sugar:qk]' pivot='key' type='quantitative' />
+            <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Residual Sugar' datatype='real' name='[residual sugar]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[textscan.42166.603854444400].[Residual Sugar (bin)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.42166.603854444400].[cnt:residual sugar:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' formula='average' id='refline0' label-type='automatic' scope='per-cell' symmetric='false' value-column='[textscan.42166.603854444400].[cnt:residual sugar:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42166.603854444400].[cnt:residual sugar:qk]</rows>
+        <cols>[textscan.42166.603854444400].[1]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Volatile Acidity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-white' name='textscan.42166.603854444400' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42166.603854444400'>
+            <column caption='Quality_bin' datatype='integer' name='[1]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[quality]'>
+                <bin value='3'>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin value='5'>
+                  <value>5</value>
+                  <value>6</value>
+                </bin>
+                <bin value='7'>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                </bin>
+              </calculation>
+              <aliases>
+                <alias key='3' value='1' />
+                <alias key='5' value='2' />
+                <alias key='7' value='3' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Volatile Acidity (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[volatile acidity]' peg='0' size='0.1' />
+            </column>
+            <column-instance column='[volatile acidity]' derivation='Count' name='[cnt:volatile acidity:qk]' pivot='key' type='quantitative' />
+            <column caption='Quality' datatype='integer' name='[quality]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Volatile Acidity' datatype='real' name='[volatile acidity]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[textscan.42166.603854444400].[Volatile Acidity (bin)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.42166.603854444400].[cnt:volatile acidity:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' formula='average' id='refline0' label-type='automatic' scope='per-cell' symmetric='false' value-column='[textscan.42166.603854444400].[cnt:volatile acidity:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42166.603854444400].[cnt:volatile acidity:qk]</rows>
+        <cols>[textscan.42166.603854444400].[1]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Fixed Acidity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42166.603854444400].[1]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Volatile Acidity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42166.603854444400].[1]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Citirc Acid'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42166.603854444400].[1]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Residual Sugar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42166.603854444400].[1]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Chlorides'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42166.603854444400].[1]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Free Sulfur Dioxide'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42166.603854444400].[1]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Fixed Acidity' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Volatile Acidity' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAAQrElEQVR4nO3deXCU533A8e/zvntpdSFABxKXhMRpFTAQmwA2trGx4xjsOHZsJ3GSxqmT
+      ZiaTHtM0jT2ZtE37R2caj1unnbrpJMb4qAkBG0MwBmwuH4BAIHGISwghhG5ptatdvfu+T/8Q
+      yAbbtVvycuj5fWYYtM+gfR+0+9U+++677yqttUYIAymllHWlJyHElSQBCKNJAMJoEoAwmgQg
+      jCYBCKNJAMJoEoAwmgQgjCYBXGW01nhuGtfzkJfo/Re40hMQH9Lfxe5t2zjZ0QdWkOKK6cya
+      Mo5Q4LP9nkq2N3DgTJyxw2HfIcX8eWOx0v0EMod9+je7PWx/u4apCz5PXvDcWLqTN7fsY9ZN
+      N5M3RO8p8ghwtfBibH/pRX674xih7GFE3C7Wr36JDbVNn/kqEq0n2LqzmtauGL2pFIm2U8Tq
+      9322b3a72LhmPZ3uh8Z0mr7eJFr93/4r15Ih2vW1J9G4h7Xvn+WBJ39I5chsVDrJ+K0v8OuX
+      32b6iDnUVR9h0s2Lye+r5r/eSPL1eyeza90qNu48SMrK5p5v/4ApgKtBOwkam3up5Tg7j7Xi
+      be9g6ZcXUZrlsWv7uySzKvj8nNKP3PhBr51/+8efoL1s5t99H4tnZNHTFKOzpYn9VVuprqnn
+      TFsbn1v6OEvml2NfiR/UH5g8AlwluhqO0zPxBmbk5xK0bQLhTCbPnEl/opYTrT3UHz1Fb7+H
+      29PI4d1N1NdVU9MW4cHv/SVfmZvN2ud3kDx3XW5fG0f2dzJ24nTuvX4s41I1rN/TSE9rI7tr
+      qkjn5n78nVdZTL3tm/zwoc9xcNMb1Bw7zaG6Gnr7ujlSfYCCmXfwg8cWs23lc5xKXb6fjZ8k
+      gKuEFclAxTrpA1zHIZlM0RePgxclZAMMrENUwAYs8ovKmFQU5eD729h1oB4yQh/cmOe+CNsR
+      MsIjmP/5CRzaUcXRhjqSajzXjR3Gx61qHJXDzXMrKB5XTmG2w9lYF57WaO2hiosZO6GUoomz
+      qAxGGCoH0UsAV4m80mmMbdnPqzsOcrbhEBtXLmf5KxvIm/I58oOQSjmk+vtpb24Gy6O+bjfv
+      7D9O/oTrmDy+EK+vD+cj1+qh8cifuoDyRDXr3qqheOoNjIh8/M0e0H00tsRI9HYS71fkhDM+
+      CMWDgd1SQSLR0JDZQyXPAa4S4eETeejRRTz3u99Q66Y5c/osTsolb8Z0dLSMaKiTF//9F2TR
+      ihtZSDQngp1qYtuG1QTpJdXfQFeykqAFSgFBCEQy2NXuMSGWyx03l/CvGxM8OGv0J67dw57F
+      xmf/mbc9RV7pbCpG5/OmAhsIWmApYMjc9QcoeUfYVcRz6O7spDfRh7ZDhAMOh6qOUXHTArKd
+      Lrp6kgQjYexAlJxMi+6OTpKuIpIRRimbrGiYlJMmElT0JiA3J0Qi1Y/C4viGf+GVzoX89NHZ
+      6LSD633oZtdgBRR9PXH600mSjiInL4/sDJvurl4yszPpT6UIhjMJBSDRHSOUm0vwGt87pJRS
+      EsBQ5/WyYdlyttad5uEf/ZSJgVbWr1rDnqPNYA/cg92US8VNX2TJTTPIDJmzKpYADJGKx0jq
+      ELlZYdAeqVQKJ+1e8G/sUIRwMHBumWMGCUAYTd4UL4x3ze4FisfjnDlzBtseCq9Hiivlmg0A
+      ICcnh4KCgis9DXENkyWQMJoEIIwmAQij+fIcwE21sOH5Zby+v5FAdDjzvnA/d80ex47fPsOq
+      906TW1TOvQ88yPWluexcs4yX39yHmzOGpV99iAVluWxf/QKvbjtIOnc8D3/7a8wrk3W+8Icv
+      jwDx+mr2dAzjr3/2dzy+aDKHd+7h8M7VvHpQ8WdPPMkdU0JsrdpLW3Mt6zY389BfPcGfzB3F
+      G6/t5vSJPWyrTvCNHz/BtyozWbFi98cc5CXEH4YvAYTyp/LgI/dTHLVJaQeyA8Qa6oiU30J5
+      wUimlhaTjMXpPn2EvoxpVI4tZOKsCkJt3XQ116OzpzC5pIBp8yZBQwv9fkxSCHxaAkWGl1Dm
+      uRzZvZYV751mzqJ7GdVyEt07sDlLWVjKOpdfYOAve+AwRmVpFIGBw3CtgTGLgf3+nZ2dg9tI
+      p9NEo1E/pi8M4ksA2nM5+s7LPLvuMLff/20WTCumebONm0jhaU067ZByHHAV0IfjaYKOA6TR
+      OoCnk6Q9jeU4oNK4QDQjg2AwOLiNvr4+Uqkh8rYkccX4EICm4+A6nlr2JlPvfJR83cKBIy5l
+      U+eS/dYa3qoK0rr7FKPyp1MwaQyFgWdZv7WM6LFdMHEiJRUlZG1dxcZ3RqH37iQ660ayACyL
+      UCg0uBXHcSQAccl8OBjO5eTOTbxVfZzkuQMO7VHTuOfmWXTu+z2bqpsI5U/g1lvmMT4/k5PV
+      m1i34xCEi7j1ztuoKIxyZM9mNu08CpHR3LXkdkpHZn5kK/F4nHg8Lq8Ei/+3y340qNYaL+2C
+      ZWOfOxYdrXG9NGB9cFyP9ki7Lsqysa2Pf54uAYhLpZRSl/VYIKUUdjBw8SC2HbxozCLwGU8G
+      JcSlkHuZMJoEIIwmAQijSQDCaBKAMJoEIIwmAQijSQDCaBKAMNo1fVYI8ck8rWloT7B2/xky
+      QjZLZxSTFw2hlEGnfvsMJIAh6nBzjO+/UMXx1jgAa6rP8KtvzmZYNPQp32kWWQINUSurTg/e
+      +QGqG7vYcODsFZzR1UkCGKJOdSQuuOxpTcNFY0ICGLLKC7MuuGwpRUVB1if8a3NJAEPUQ3PG
+      cEPZcKIhm8yQze3Tilh8XdGVntZV55o9Pbq8IeZ/p7WmrTfFW4dbyQja3DqlgGhI9nl82DX9
+      +QASgLhU8vkAwngSgDCaBCCMJgEIo0kAwmgSgDCaBCCMJgEIo0kAwmgSgDCaBCCMJgEIo0kA
+      wmgSgDCaBCCMJgEIo0kAwmgSgDCaBCCMJgEIo0kAwmj+nSdDa/qTcWIxh5z8PILKI9Z+lpau
+      BIFIJiNHjiQasknGOmhu7UKHohQWDIzFu9tpbe9BhzMZVZhPRtD2bZrCbL4F0B9v5e3Vr3Oi
+      O4svfecBhrtnWbnsP2hwoliuzYxFS7i1soBNryzj/TNJlGsx5bZ7uPuPhrPhv19gf1s/6aRi
+      5pIHuG92qV/TFIbzaQnUT/VrK9hcVUMHLgpw2g6yqz7CV7/7HRaMy+b4sQa6TlezvVbzlce/
+      xzdurWDPxv00Ht3FvlNRHn78u3x9fglb1uwl5c8khfArAJvRsxdy133zCeOigcDwCsbHGvn1
+      U0/z2o6TFI4Yjp1sxQmVUZqfS3F5MYHeBH3draiM8YwZkcuYqaOhrQfXn0kK4dcSyKaofDKJ
+      5GksEmig+0QV9Zl5LF18N727NnL42CnmjEgDFho+SFEB6A99PSAWi9HW1jZ42fM8srOz/Zm+
+      MIZvzwEUF55xsefUIexpi1kwaybtqp6qTS30pUeg3Ha6+/qJdPaQDmrsYBQv3UFP0sFq78LN
+      sFBAdnb2BXf486dGFOJS+Hi2VIXC4vz+m+ETZ1GweTO/W9NOouEUw8fPoLC8gkkFz7JixWoi
+      LfUUzJzL6IpCit95mZUrV6FPHqFswWIy/JukMJx/J8fVmljnGRqbE5ROLidCH0f37uTo2ThW
+      JI+J06YxZmQmHadq2XOoER3Mo3JGJUW5IZrra9l/9AwqPJIZsyopyI585Orl5LjiUl32s0Nr
+      rdGeB8rCstT5QTztAQrLsi4cUxbWJ3yomwQgLpVSSl3WE8YrpVC2ffEglvoMY0L4QA6FEEaT
+      AITRJABhNAlAGE0CEEaTAITRJABhNAlAGE0CEEaTAITRJABhNAlAGE0CEEaTAITRJABhNAlA
+      GE0CEEaTAITRJABhNAlAGE0CEEaTAITRJABhNAlAGE0CEEaTAITRJABhNAlAGE0CEEaTAITR
+      JABhNAlAGE0CEEaTAITRJABhNAlAGE0CEEaTAITRJABhNP8+J1hruppPUFfXxdT515NlQ9Ph
+      d1m/ZT8qZxQ3LphHRVEuZ+veZ8PW/bh5Y7jl1nmMy41wsuY9trx/EHdEKXfePo/i7AzfpinM
+      5tsjQO/ZA/zmn37J9tpjpDyg5xD/+eKrRCdMI6urntVvVtHR08Sq5WvQxROINh7kpbV76Wg7
+      wZpVmwmNLSdweCfPrT/g1xSF8OsRoI8dy1fSN74QhQPAqV2/J1aykDll+STyb2HmiAKspu2c
+      6J/K39y5kPC0EP/wzDEaSk7QHriORxfdTGCCyxNPH6D3y7PI8meiwnA+BZDBbX/+EyYc2sya
+      zc14gOfatG1fzbK20aQ7EpTM/QL3VKRRKpsM20JlhABQysNSWURsC50RAq2xAcdxSKVSg1tI
+      JpP+TF0YxbfnADYa0t7gZS+dImfSXfzFj75A9+5V/Kqqkd4SF42FCwS0B7hoT6Fx8AClPdAu
+      HuC6LolEYvD6HMchGAz6NX1hCP+eBF8ku2gUOtVEb8Ih0duP6wYIjxiNndrKiZYY0bp64rlh
+      cvLz8RKHONUeQ9ceI1mYSwgIRiJEIpHB64vH48Tj8cs1fTFE+RiAwsLm/O/ovGl3c/t7T/Pz
+      J3+MF8jjli89QOHYMSya8y7P/P2TWOSy6OGvUlI6gtnle3jqb59Ee3kseewO5Pe88IvSWuvL
+      tTGtPZxUCmUHCQbPtac9HCeJtkKEAufHXPr7Uyg7RDDw8Y2efwQoKCi4TLMXQ41SSl22JdDA
+      Bi1CkYv26SuLYCh60ZhNKHzRmBA+kFeChdEkAGE0CUAYTQIQRpMAhNEkAGE0CUAYTQIQRpMA
+      hNEkAGE0CUAYTQIQRpMAhNEkAGE0CUAYTQIQRpMAhNEkAGE0CUAYTQIQRpMAhNEkAGE0CUAY
+      TQIQRpMAhNEkAGE0CUAYTQIQRpMAhNEkAGE0CUAYTQIQRpMAhNEkAGE0CUAYTQIQRpMAhNEk
+      AGE0CUAYzb/PCdYeLSdq2LWrhblfWkReAEDT1VDDG+/UULngHiaPinLs/bUs++0WnMLJPPLI
+      fUzJj3Jg++u88vq7uCWV/PGj9zEhL8u3aQqz+fQI4NG0byNP/exp9rd14J37LPr+3hY2rVvO
+      hto2UmkXJ3aEF5bvYMG3vs89RQ7PvbidppN7Wb32IHd85/vcHmnjmeffw/NnkkL4FYDDyZoG
+      yu6Yg4UzOHbo7fXsbFAUDQuQdqHvdC090ZncOGUc1y+cTqipjZaTB0jnTmdmxThuvGsG+nAj
+      CX8mKYRfAYS54ZFvccvMckKAB3TUbeH1bZ0svX8p44cH8LQGW2ERHliHBSxQCstSWIQGxmwb
+      lMIGkskkra2tg3+6u7v9mbowim/PASw0uOcXLylq39hCXVsM77UWmlo6OE0ZRZX9aAK4QMDz
+      gDSeZ6FxcAFLu6DTuEDYtolEIhdsQ2vt1/SFIfx7EnyOAiBI5f2P8cRdKRItR/j99n1MnTGR
+      kWMLCadeYu/x+WQdqKW3IJuRY4rRG7dyoGE2+p399JeVEgWsYJBgMDh4vZZlEY/H/Z6+GOJ8
+      DECRkZHH6AKPoLIYNmoMw4BEtmZSRz/j8/PIGFbMw/ddx/PP/gIdGcPXvraEkjFZfHHhCVb8
+      8hcQLeVPH7tJ9tUK3yh9pdcR2iOddsAKELDtwTEn7aA+PHaReDxOPB6noKDgMk5WDCVKKeX7
+      EujTZ2ERCIY/Mha8eEwIH8jqQhhNAhBGkwCE0SQAYTQJQBhNAhBGkwCE0SQAYTQJQBhNAhBG
+      kwCE0f4HAKfv6T3M9NUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Citirc Acid' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAATDUlEQVR4nO3de3BW9ZnA8e85573lffPmShIuMZFLEFDutwokgKJURRCLt9qq23a7092Z
+      Tv/ozk5np+3s7HbbTme3s9tut7t1O7UWxKKggigEqoJcBcIlCQmQEAK535P3ft5zzv6hRLxV
+      KxxBfs/HccacgfP+JO+Xc97znjeP5jiOgxAK0jRN06/2IoS4miQAoTQJQChNAhBKkwCE0iQA
+      oTQJQChNAhBKkwCE0iSAa4zjONhWGsu2kbfo3ee52gsQl0j1c/jNNznXGwfdy+iy6cyeXIrP
+      88n+nkr0NFPbFqUkD47XaSxaWIKeTuEJ5Xz8b7YG2fNGNVPKF5DrfWdbuo8du44zu2Ixudfp
+      M0WOANcKe4g965/h+b0N+MI5BKx+tr24nsqa1k+8i1jXWXa/dYyu/iEiySSx7vMMNR3/ZL/Z
+      6mfnlm30WZdsc9LEIwkc7S/7X/k8uU67/vyJXahi68EOHvj+d5g6IoyWTnDj7nX87tk3mJ4/
+      l1PHTnPT4uUUxI/x2+0JvnrfJA698gI73zpJUg9z79e/zWTAcsAxY1xoj1BDI281dGHv6WXV
+      mmWMzbQ5tGc/icwyFswd+4Fvvtfu4b9//I84dphF96xm+YxMBluH6Ots5cSR3RyrbqKtu5t5
+      q/6GlYsmYFyNP6grTI4A14j+5kYGJ85nRkE2XsPA4w8xaeZMUrEaznYN0nTmPJGUjTV4gfrD
+      rTSdOkZ1d4AHv/VdHro1zNY/7CXxzr6seDenT/RRMnE6980qoTRZzbaqCwx2XeBw9RHS2dkf
+      /uTVdKbc/gTfeXgeJ/+0neqGFupOVROJD3D6WC2FM+/k299Yzpsbf8/55Gf3Z+MmCeAaoQcy
+      0Ib6iAOWaZJIJIlHo2AH8RkAb5+HaB4D0CkYOY6bRgY5efBNDtU2QYbv3W/mO//hNwJk+PNZ
+      tGA8dXuPcKb5FAntRm4pyeHDzmpMLYvFt5YxunQCRWGTjqF+bMfBcWy00aMpGT+WkRNnM9Ub
+      4Hq5iV4CuEbkjr2Zks4TvLT3JB3NdezcuJa1GyrJnTyPAi8kkybJVIqe9nbQbZpOHWbfiUYK
+      xt/CpBuLsONxzA/s1cbBpmBKORNix3jl9WpGT5lPfuDDv+0eJ86FziFikT6iKY0sf8a7odjw
+      9mUpL4Gg77q5QiWvAa4R/ryJPPzYMn6/6SlqrDRtLR2YSYvcGdNxguMI+vp45tc/J5MurMAS
+      glkBjGQrb1a+iJcIyVQz/YmpeHXQNMALnkAGh3psxg9lc+fiMfxyZ4wHZxd/5Lm739bZ+Zt/
+      5w1bI3fsHMqKC9ihgQF4ddA14Lp56r9Nk0+EXUNsk4G+PiKxOI7hw+8xqTvSQFlFOWGzn/7B
+      BN6AH8MTJCukM9DbR8LSCGT40TSDzKCfpJkm4NWIxCA7y0csmUJDp7HyF2zoW8IPH5uDkzax
+      7Eu+7Q7oHo34YJRUOkHC1MjKzSWcYTDQHyEUDpFKJvH6Q/g8EBsYwpedjfdzfnVI0zRNArje
+      2REqn17L7lMtPPIPP2Sip4ttL2yh6kw7GG8/g62kRVnFClZWzCDkU+esWAJQRDI6RMLxkZ3p
+      B8cmmUxipq33/BrDF8Dv9bxzmqMGCUAoTT4UL5T3ubkKZNs2lvXuYTsej9PZ2YlhXA/vR4qr
+      xbVTIMdO0X7uLB0DcfSMbEpKxpDl1+ltP09LRz96MJexNxYT8jj0dLTQ2tGHE8rnpvHF+Jw0
+      XW0XaO8eQAsXMHlCMalolN7e3uH9W5ZFMBiksLDQjeULBWiaprl2BIi0VrH+6W34RhUR7Ryk
+      pPxevlhm89zzm0kYWUQ7B5l4z8MsLzHZ+tyLdGt+hjoizH74Mb4Q7mHzpkqiXj+9F4ZY8s1v
+      sXRsNqFQaHj/0WiUaDTq1vKFIlx7DRDr7CB/+nIe/+pjrJiWRVXtORqOvEpXzkzWPPglVi1f
+      QFHIoP1MFe1mMQ898TiPLirk9Y1vcabuBLFgGQ8//jgPzw+zfdNxUm4tVCjNtSNA3uSlrJ6c
+      QUa6i2MtXeSPnE68q52G/U38/Oir2HYRX/rbiSTjUQLB8RSEw1iTRpPe0k48AeHQKPIyM8m8
+      ZQypvf3Ybi1UKM21I4AnkIk92MSz6/9ArTOZL1dMw6v5GHvT3Xz/pz/miXKDja/XAs47/8C7
+      N544OFz6iSi5Uivc4VoAyf4mNj77FBe0G/na6mUUZPrwZvoxCsL4HJ1gwI/h0fD6M0gluxlM
+      JOlt6cDJCeDzeYkleokmU3Sfb0fLDXzo3YtCXC6XToEsTu/ayM6qNqbMuoE3XtmIXjybO6bd
+      Rtbzr7F2XQO9zTFm3F5MUWkBWYe3sH7tOmKN55i34quML+zjaP1rrF/XRl9dK4seXY3fnYUK
+      xbl0GdSmq6GWpt748BY99wamleTSca6e5o5B9MxCpkweS6Zh03GhgcaWHoxAAbdMLSNDS9Ha
+      3MC59j68wSKmT5/I++/gvXgVSC6Dik/rqtwK4TgOOA5oGpqmXdyI7ThoH7ftEhKAuFyuvg/w
+      Zx70nRvW37MR/ZNsE+IKk3uBhNIkAKE0CUAoTQIQSpMAhNIkAKE0CUAoTQIQSpMAhNIkAKE0
+      CUAoTQIQSvvc/FgU8ZexHYfmnhhbT7SR4TNYNWM0uUHfh95ZqzIJ4DpV3z7E3607QmPX2z85
+      Y8uxNv7viTnkBH1XeWXXFjkFuk5tPNIy/OQHOHahn8rajqu4omuTBHCdOt8be8/XtuPQ/L5t
+      QgK4bk0oynzP17qmUVaY+RG/Wl0SwHXq4bk3MH9cHkGfQchncMfNI1l+y8irvaxrzuf2x6PL
+      Z4L/PMdx6I4keb2+iwyvwW2TCwn65JrHpT7X8wEkAHG5ZD6AUJ4EIJQmAQilSQBCaS5dFkjR
+      fOIw+0+ex5OZz80zZzFhZC6G5hDraaH6TAvFN01nVLaPrrMn2HuoHit7FPPnz2J02Efr6eO8
+      dbwBO7eY8gWzKAwF3FmmUJ4rR4B4yxHWb6jEk5OP2VLPtu0H6Y6Y2Gacmv0v8WzlQToGktip
+      bjY/8wLtBBisfosNO47T39vM1k3b6DMC9BzcxTOv1buxRCEAlwJIxaFsyX2suG0xFXPHEYt2
+      0B9N0tP0Fus37yflgO1ArPkQ9QOlrF51F/evmEn3oTM0nzxAa3o8K++9iwdWTaPpT9XIICTh
+      FldOgbInfIH7xjtEuhr506FaAoXTyaKFP/5qBxWPfpOes6exbLCdJOgjyPZ70XJCaJaNY1sY
+      xhjCPi9ObiaY3ehAOp3GNM3hx0ilZGiSuHyuvTU42FbH5pe30GKUsaZiDu3bfsFxI4+S9jM0
+      n23EM7qZ0iILBwcL8Dg2YOM4GjZpbEBzbHBsbN5+wg8MDAzvP51O4/fL1ABxeVwJINV3muc3
+      PEN3zizW3FHByJBBuvRWlgf7GBrsIJFIEUuaGOEijNQBzvdECJ5tIZbpJZSbhx0/S1t/FE43
+      kxwRxAv4gkGCweDwY8iUSHEluBCAReOB19lX1YBvhMnvG46gl8zliVVLWbkgQKTlOBHHw7TJ
+      48gdY1A+bS//+28/xTA9zFuxhuJxI5hWcpxf/ewnOAkvdzz0FeQjHMItLtwL5GAmYsSSJhf3
+      rHn8hDL8eAwd2zJJptJ4fH48ukY6GaV/aAj0ANnZWXgNHTMxRP9QFN0TJDs7jNf44Gt1uRdI
+      XC65GU4oTW6GE8qTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0C
+      EEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJACh
+      NAlAKE0CEEpzaUJMkjMHdrHzaCOerELmLCzn5hvC1O2qZE9dC97cMSwoX0RZURbt9QfY/sYx
+      rLwSbr+9nNKcAOdO7OP1/bVYI8Zz9/JFjA5nuLNMoTxXjgDRc/tZu2kP42bOYaTZxY5X99F4
+      tJJnt1ZRNnMWOX1n2Vp5mL6BVjatfRm9dBLhtnqe2VpFb1cjm194nYxxk/CfPsRTr9a4sUQh
+      AJcCsJxsytc8zm1zZjBjajGm3c9ALJPbHvkrlsyeyaypRQzG++g9vZem9BRW3VnByvvmETve
+      SPPJ/fR6p3L3sgruf3AunbtqibixSCFw6RQo68YZLC216Wup5ZUDJ8kePY+y2QvI9jl0nTvO
+      lkPnKJ18G+FQEzoZBAwdLeAFNDTNQdcy8es6TuDt4UgGYJomiURi+DGSyaQbSxeKcW1KZO+5
+      Kp7bsp3UiDnct2g2OQGD1rrdvFC5D0/xfO6edzOBtmYczEumRFo4toaDecmUSAsbsCzrPQGY
+      ponH49ryhSJceQYlu2tYt34D1rjbuH/xbHK8EG07wtMbNpM99S5WLJhK0HAwcsZgJHfQ2DlI
+      6FQTkWw/WQUF2LGTNPcMQc0ZEkU5+ABvIEAgEBh+DJkSKa4EF2aEpanZ/CT/8fxunFA+mT4d
+      z9hbWeg9xca9dQSy8gn5dDwTl/H3j5Rz4tUneW7veXQthzsfeZQ7p+az87kneeVIK46Tx6pv
+      fI3l04o/8CgyI0xcrmtjSJ5jY5pJHN2L7+IpjWORMlNouhfvR5zmSADicmmapl39k2hNx+t7
+      33V+zcD3/m1CuEDeCRZKkwCE0iQAoTQJQChNAhBKkwCE0iQAoTQJQChNAhBKkwCE0iQAoTQJ
+      QChNAhBKkwCE0iQAoTQJQChNAhBKkwCE0iQAoTQJQChNAhBKkwCE0iQAoTQJQChNAhBKkwCE
+      0iQAoTQJQCjNpR+Om6Lp6EH21JzDEx7BtDlzmTgqj9aa3ew61ky4aCzz586iMMtHR8NRdh84
+      iZU9moWL5jIm7Kelvop9Vaex80pYWjGXolDg4x9SiE/BlSNA7MIh1j+3k8xRxRhdjWzfdoC2
+      80f5w/Mvo+fm01a/n51HaonGO9m87kX6AzkkT1Xx7Pbj9PWc4+VNlcRDuUSq9rB2Z50bSxQC
+      cCkAM+nh5jvWcPfihSyYNZZ4vIuTu1+iM/927r9zGV+cU0rT2XO0n9zLqeg4Vt27nNX3zqLv
+      8BnOnzxAu1PGinvu5IH7ZnD+tRpkDoxwiyunQNnj57FinMNQ5xl2HKolOHImBVorPqMIv8dD
+      KBBAc0wsO4mm5ZHl86BlBdFsB8cx0fVCMr0enOwgpDvRgXQ6TSqVGn4MGZInrgTXXgQPtNaw
+      6YVNdPrKuLd8HjkBg1Q6DYDjOFi2BTbDQ/K4OCTPcYaH5HHJkDzTNBkcHBz+V+aDiSvBnSF5
+      vfVs+ON6+kfMY82yhRQEdeKjxmAdOkpndBKtrT3oeg7B/EKM1D6aeyIEG88TC/vIzMvHjjfS
+      0hdBO9VEsiCEF/BlZJCR8e7UGBmSJ64EFwJI07j/DQ4ebcSTl+LJk/vRS+fz9XsrKM/6NT/7
+      0b+AL59lKysovGEEi2fs49c//RGGFeALqx5kzLh8Ztx4jP/6yY9wUgGWP/o4viu/SCEAV6ZE
+      OqRTKVJmmuEdGx4CPh92Kk40kkDzZRAK+TF0DctMEIlFQfcTCoXw6BrpVJxILIbuCRAKBfHo
+      HzxTkyF54nJdG1MiPyUJQFwuTdM0eSdYKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlA
+      KE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITS
+      JAChNAlAKE0CEEqTAITSJAChNAlAKM2lKZGA49Db2kBdXR9Tl8wlbKSp3/cqlYebCBWNZ8nS
+      ckrzg7TW7uOV16qw8kq5Y/lixuYEOHtsLzv3VmMXTGDF3YspDmd8/OMJ8Sm4dgSItFfz25/8
+      kv31TaRssPpqePqlPYyfM5dAbz07D1YzFG1j49qXCUycwYjuM6zbUkVPVyNbXtxFzpQZhM9W
+      8but1W4tUQi3Aoizd/1LMKWUNCYA6Ug/yWgBY4oLyfUGsaJJBhv202xPY9UdC1mxej7JE2dp
+      rt1Pn386dy1dyP0Pzadndy0RdxYphFsBZHD7d77H6iXT8ONgA1rWGPIjdTzzm6fYebiBYDCI
+      1ws6IXyahubzgKah66ATfM82gw8OyYvFYu4sXSjFtdcABg6k7eGvu4/voGXSUr77+DL6D23m
+      pfpT9OfrOGhYgOfilEhbG54cqV8yJdKyrPeMSTVNE4/HvZcwQg2f2TPIsVNoMR9ZOTmkQxkk
+      sPDm34CRfIOGjkFCdWeJZPvJKizEjtbQ3L0ITpwmMSoPP+AJBAgEAsP7kymR4kpwMQANQ/MS
+      9HjQgKI5K5m9+z/5p+/twTJyqVj5AKNLSrlrwWH+519/gKbn8cUvf4XicbncOuUEv/znH+Bo
+      Baz563s+u0qFcj7TIXmObZNMpjA8Hrxez8WNmGYSR/fiu3hK41ikzBSa7sX7Eac5MiRPXC5N
+      07TP9C9XTdcJZATevxGv733X+TUD3/u3CeECeSdYKE0CEEqTAITSJAChNAlAKE0CEEqTAITS
+      JAChNAlAKE0CEEqTAITSJAChtP8HpuxzXmVHaAcAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Residual Sugar' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAAOmElEQVR4nO3deXCU533A8e/z7qmVdnVgLeiwhAARWdxgMMYcjmObFDCmBuQzthOHuJ1M
+      M2mnx0w9nTR/dDrNdJJ00mnrdOo48ZHYMsSmONgW2Fw2WAKBQDJYILwWQkJI6Fhp733ft3+g
+      YJuYQMdehHh+H0Yz2ofd5Yf2/WrffVfaVbZt2wihIaWUMkZ7CCFGkwQgtCYBCK1JAEJrEoDQ
+      mgQgtCYBCK1JAEJrEoDQmgRwjbFtG8tMY1oW8hR95jlHewDxKckBDuzZw8d9MTBcFFfOYt5N
+      5bidV/Z9Kn6unQ+6IpQVwOFjisW3lWGkkziz8y5/YTPMuzubqV6yiHzXyFq6n227DjNv6TLy
+      r9MtRe4BrhXWEO/+5tdsfK8Ntz8PrznAm6/9hrqWziu+imjPR+xuaKJnYIjhRIJo7ymGQoev
+      7MLmANu3vEm/+ak1O01sOI6t/n//lbHkOu167Il2HOR39d2s/4fvM+MGPyodZ+LuF3n2pZ3M
+      Gjef1qbjfGXZcgpjTTzzVpxvrKli/9ZX2d5wlITh554nvsdNgGmDnYrScWaYFk7S0NaD9W4f
+      9667k4oci/3v7iOeU8mi+RV/cOO7rHP85z8/hW35WbzyT1k+O4dw5xD9Zzs50ribpuYQXb29
+      LLj3SVYvnoJjNL5QXzK5B7hGDLSfJDz1FmYX5uJyOHB6sqmaM4dktIWPesKETpxiOGlhhjv4
+      8EAnodYmmnu91Pz5X3P/rX5+9/x7xEeuy4z1cvxIP2VTZ7FmbhnliWbePNhBuKeDA82NpHNz
+      P3/jVQbVX3uc7z+wgKNvv0Vz22mOtTYzHBvkeNMHBOfczfe+vZw9m37FqcTV+9pkkgRwjTC8
+      WaihfmKAmUoRjyeIRSJg+XA7AM7vhyinAzAonDCJr0zwcbR+D/s/CEGW+5Mbc+QTj8NLlmcc
+      ixdN5th7jZxobyWuJjK9LI/P26tJqQDLbq2kuHwK4/0puocGsGwb27ZQxcWUTa5gwtR5zHB5
+      uV5+iF4CuEbkV0yj7OwRNr93lO72Y2zf9AIv1NaRf9MCCl2QSKRIJJOcO3MGDItQ6wH2HjlJ
+      4eTpVE0cjxWLkfqDa7WwsSisXsKUaBNbdzRTXH0L47yff7M77RgdZ4eIDvcTSSoCnqxPQrHg
+      /GEpF16f+7o5QiWPAa4RnoKpPPDonfzqt7+kxUzTdbqbVMIkf/YsbN8kfO5+fv1fPyGHHkzv
+      7fgCXhyJTvbUvYaLYRLJdgbiM3AZoBTgAqc3i/3nLCYP5XL3shL+fXuUmnmll9x391gG2//7
+      x+y0FPkVN1NZWsg2BQ7AZYChgOtm0z9PyW+EXUOsFIP9/QxHY9gONx5nimONbVQuXYI/NcBA
+      OI7L68Hh9BHINhjs6yduKrxZHpRykOPzkEil8boUw1HIDbiJJpIoDE7W/Yza/tv5waM3Y6dT
+      mNanbnYbDKciFo6QTMeJpxSB/Hz8WQ4GB4bJ9meTTCRwebJxOyE6OIQ7NxfXGD86pJRSEsD1
+      zhqm7rkX2N16mgf/7gdMdfbw5qtbOHjiDDjOb8FmwqRy6SpWL51NtlufvWIJQBOJyBBx201u
+      jgdsi0QiQSptfuY8DrcXj8s5spujBwlAaE1+KV5ob8weBYpEInR1deFwXA/PR4rRMmYDAAgE
+      AgSDwdEeQ4xhsgsktCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQ
+      mgQgtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQmgQgtDamXxVCXJpt29hw4TVAnYZCKY1e
+      9u0KSQDXqZRps+/kOV471EmW20HNzaXMKMmVCC4iAYwxDQ0NhMPhy54vHEvx7N4Qp/vPv2/M
+      R4f9fPO2iZ/7xhifFggEmD9//hcfdIyQAMaYTZs20dbWdkXn9QCTRj5P9cLPmy9/mYqKCgng
+      S2Fb9LQfo+lQDzevXEaeE0IH3+TFzfswCspZfs9KZpaNo/3gNl7espd0YSX3rV3B1HE+Wuvf
+      4rW6A1gTqnno/hVMzMvO2JhCbxkKwKb3+F7+40fP4Zv7NebYYPbU87PaXax46Juo5t28tbOJ
+      4hXlvPTCDqofegRf0zs8v/F9vrsqyOYtB5lbs57Urtd5+pVG/unbS+Rw1YinnnoK0zQve76X
+      93fwP6++jSveR1fedHxuBz9eP4v5FQV/9HK6vdZqhgJI8MGuRgoXzyQSTQLQcWg3VtFc/NFu
+      YkVVrJk0GefZ3fS65/DVm6txFw2y4ycf0nW8k1jObG6bXY0jv5ttPzpJlCXkZGbQMScn58q+
+      EusWZhFqa6X+SITSYAFfn17EHbMmYsiD4M/IUABeFj/xXUqOvsOWHWewAHAzdOh9Gv3VJDo7
+      UV0J1txkYeDFBeB0gFIYDjDw4ARspwMMhQNIJBJEIpEL/0IymcQw5H7hUvJ8LlbPLsET7+PO
+      FTOYW54vG//nyNgWZGCDaV04baVi5Ey/m8cefZSa5dWEh3qIxdPYJDEBLAtIY1k2Nqnza7YF
+      dhoLUEphGMZnPsSlKaVQQNUEP4um3IDXpdeuzZW6altRXvkkzLOH6RlOMnAuQiKhyBo/BWfs
+      MEc7B/joyIeEC3wUFFdgDrfQ1j1A6/4WYqX5eAG3201eXt6Fj+xseWAsvrgMHgZVeDx+gnlx
+      HAryqu/lkfk/56f/+PfY/nLWPLiOorLx3H9PC7/81x+C50buf+xBSisCfH3RCZ75lx+Ct4In
+      /+z2S76tpxBf1FV9jzDbtkknkyiHE6dzZLO2LdLpJLZy4nKO9GibpNIplOHCeYmjEpFIhEgk
+      Im+Q8UfU19cTCoWoqakZ7VGuSUopdVWfCFNK4fJ4Llo0cLq8F605cMk+q7gK5JGk0JoEILQm
+      AQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA
+      0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQit
+      SQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoE
+      ILQmAQitSQBCa85MXbFlpmhvbmD/oT7ueGgVBS6wbYveEw1s3t3C/LvWMaPER/OOjTy/eR/p
+      GyZT8/B65pb4OVi3kY11jaSDVTz2rRpmTsjP1JhCcxm6BzBpr9/K0//2LCciUeyR1US4k7qt
+      L7Pv4wimZZMcPMYrr7aw8i/+hoerfLxSu4/ToUbe2NXJ2r/8W9aVJPnFiw2YmRlSiMwF0Ncd
+      Y/qKhThJjQSQ4EjdVo4N5nJjgRvTgnh3K1HfLOZNLmbaomo8Z/vp6ziOnTud6eVFzPnqDDjZ
+      RTwzQwqRqQDczL53PQtvKsMF2EBPcx1vHEyzZvVyigMKy7bBUIDr/BAOA5RCGQp10ZoBxGIx
+      zpw5c+Gjr68vM6MLrWTsMYCBDdaFnR9atr3Pic5zvPR8K30DQ7QlbuTJeUlsHJiAYZlgp7FM
+      A5sU1qfWTMDrchEIBC5cfzweJ51OZ2p8oYmMBQBq5A+Am1u+9VdMS6SJdB9l8zuNTL99LkUl
+      YfKsX7D70Exyjh0iWV5M0eRiXDvfYN+RSuyGA6jpM8kGlNOJ0/nJuLZtSwDiC8tgAJDtD1I5
+      0YVbKbIC+WQBOWqYqmlxSvNycGcXUrN2IRu31mJ7Snh47WKCxdmsuqud17fUQlY5Tz5460hE
+      Qnz5lG3b9uXPlkG2RdpMg3LgdDg+s6aUA8fv1y4SiUSIRCIEg8GrOOzYUl9fTygUoqamZrRH
+      uSYppVRG7wGubAoDp9N9+TUhMkCeCRZakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBa
+      kwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJ
+      QGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE
+      1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGjNmbFrtm2SsWEGw0nyguNw
+      GSYD3V2cHYxiuH0Ujg8S8LqIhXvp7O7HdmczoShIjtvBcH8P3b2D2J4cSoqD+FyZG1PoLWNb
+      VnL4LO/89n8JDeeydsN6AgMf8tIzGwn7AqQjScoW3M29i8rZUfscB3osjJTNlNtXcs/sAt6q
+      fZGjAxbpqMWMVetYO39SpsYUmsvQLlCSg5tr2Xn4GP2YKCBy5hR22UI2fOc7rL2lhOMfnuBs
+      qJH3PjCo2bCBb9xRSdPbR+g4vp/m0zk8sGEDjywpZc+WJhKZGVKITAXgoHzhXay8bzEeTGwg
+      p/wWalYvJUCcj3p6ceVlYyTPkXJXMPGGXIqmFOGMxIiFe1HeckoLcimtKoFzYczMDClEpnaB
+      HIyfNIVItB2DCDbgys7DN9TDttdr2X7KxyP3LyAvtgOwsQHUyEUVcH7lkzVgaGiI3t7eC6ct
+      y8Lv92dmfKGNjD0GUBedTkd7eOOVp2kcmMDjD65jyvgcEqdyUObHDESTePsGSbnB6fZhpc8R
+      jidRvf2YPgMF+P3+z2zwkUiESCSSqfGFJjJ4eEWhMHAAYNLRsIVXd7UxdcGNNL/7Bi2FVdw1
+      dxpV4/dSW7sJz9l2iubcRknleEr2vsQrtZuw2tuYsvRPyMrckEJzGQ0gWFrNXXdU4HcoKJnL
+      E49Pwhr5WyM/gDtrPKtr1tHUehp74mSmzZxGXsDNqvvuoaXtDKq8kplzp2VuRKE9Zdu2PaoT
+      2DaWbYEyMJS69NpFfr8LFAwGr+KwY0t9fT2hUIiamprRHuWapJRSo/8Mk1IYynH5NSEyQH4U
+      QmhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE
+      1iQAoTUJQGhNAhBa+z+GQdLqa71fQwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Chlorides' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Free Sulfur Dioxide' width='192'>
+      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
+      obX/BY+81l+WrtqHAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
